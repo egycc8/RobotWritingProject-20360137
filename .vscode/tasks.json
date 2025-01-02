@@ -1,27 +1,27 @@
 {
     "version": "2.0.0",
     "tasks": [
-        {
-            "label": "build MainRobotCode",
-            "type": "shell",
-            "command": "gcc",
-            "args": [
-                "-Wall",
-                "-Wextra",
-                "-g3",
-                "MainRobotCode.c",
-                "rs232.c",
-                "serial.c",
-                "-o",
-                "output/MainRobotCode.exe"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": ["$gcc"],
-            "detail": "Generated task for compiling MainRobotCode"
-        }
+      {
+        "label": "Build Robot Code",
+        "type": "shell",
+        "command": "gcc",
+        "args": [
+          "-Wall",
+          "-Wextra",
+          "-g3",
+          "MainRobotCode.c",
+          "rs232.c",
+          "serial.c",
+          "-o",
+          "output/MainRobotCode.exe"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "detail": "Compiles the robot code"
+      }
     ]
-}
+  }
   
